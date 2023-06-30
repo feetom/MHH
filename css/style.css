@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    font-size: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.backimg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/bg1.png);
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin-bottom: 30vh;
+}
+
+header .headerchart {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headerchart .logo {
+    display: flex;
+    flex-basis: 20%;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+header .headerchart ul {
+    display: flex;
+    flex-basis: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+header .headerchart ul li {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+
+header .headerchart .headicon {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: space-around;
+}
+header .headerchart .headicon2 i{
+    display: none;
+}
+
+.backcolor {
+    background-color: #575252b2;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: -50vh;
+    left: 0;
+   
+}
+
+.menuchart #menubar {
+    height: 30vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20%;
+}
+
+.menuchart #menubar ul {
+    letter-spacing: 2px;
+    text-align: center;
+    flex-basis: 20%;
+
+}
+
+.menuchart #menubar ul li {
+    margin-top: 3vh;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+.movieword {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.movieword h2 {
+    padding-top: 15vh;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.moviechart {
+    width: 100% !important;
+    height: 60vh;
+}
+
+.videochart h2 {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.videochart video {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 15%;
+}
+
+.videochart h2 {
+    font-size: 3rem;
+}
+
+.review {
+    width: 100%;
+    overflow: hidden;
+}
+
+.review .reviewchart .bigreview {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.review .reviewchart .bigreview h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.review .reviewchart .reviewmore {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 3vh;
+}
+
+.review .reviewchart .flash {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+}
+
+.review .reviewchart .flash h5 {
+    font-weight: 900;
+}
+
+.review .reviewchart .flash .flash_review .reviewimg{
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+.review .reviewchart .flash .flash_review .reviewimg img{
+    max-width: 6vh;
+    max-height: 6vh;
+}
+.review .reviewchart .flash .flash_review .reviewimg .reviewname{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.2%;
+}
+
+.review .reviewchart .flash .flash_review p {
+    line-height: 3vh;
+    font-size: 0.9rem;
+}
+
+.review .reviewchart .flash .flash_review p strong {
+    font-size: 1rem;
+}
+
+.review .reviewchart .spiderman {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 3vh;
+}
+
+.review .reviewchart .spiderman .spiderman_review h5 {
+    font-weight: 900;
+}
+.review .reviewchart .spiderman .spiderman_review .reviewimg2{
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+
+.review .reviewchart .spiderman .spiderman_review .reviewimg2 img{
+    max-width: 6vh;
+    max-height: 6vh;
+}
+.review .reviewchart .spiderman .spiderman_review .reviewimg2 .reviewname2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.review .reviewchart .spiderman.spiderman_review p {
+    line-height: 3vh;
+    font-size: 0.9rem;
+}
+
+.review .reviewchart .crimecity {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin-top: 3vh;
+}
+
+.review .reviewchart .crimecity .crimecity_review h5 {
+    font-weight: 900;
+}
+
+.review .reviewchart .crimecity .crimecity_review .reviewimg3{
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+
+.review .reviewchart .crimecity .crimecity_review .reviewimg3 img{
+    max-width: 6vh;
+    max-height: 6vh;
+    margin-top: 0.6%;
+}
+.review .reviewchart .crimecity .crimecity_review .reviewimg3 .reviewname3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.review .reviewchart .crimecity .crimecity_review p {
+    margin-top: 1vh;
+    line-height: 3vh;
+    font-size: 0.9rem;
+}
+
+.review .reviewchart .crimecity .crimecity_review p strong {
+    font-size: 1rem;
+
+}
+
+.event {
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    color: #000;
+}
+
+.event .eventtext {
+    margin-top: 7vh;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+.event .eventtext h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 8vh;
+}
+
+.event .eventimg .Crimecity_event h5 {
+    margin-top: 2vh;
+    font-weight: 600;
+}
+
+.event .eventimg .Crimecity_event p {
+    margin-top: 2vh;
+    font-size: 0.9rem;
+}
+
+.event .eventimg .Theflash_event h5 {
+    margin-top: 2vh;
+    font-weight: 600;
+}
+
+.event .eventimg .Theflash_event p {
+    margin-top: 2%;
+    font-size: 0.9rem;
+}
+
+.event .eventimg .end_event a img{
+    width: 100%;
+}
+
+.event .eventimg .end_event h5 {
+    margin-top: 2%;
+    font-weight: 600;
+}
+
+.event .eventimg .end_event p {
+    margin-top: 2%;
+    font-size: 0.9rem;
+}
+
+footer {
+    width: 100%;
+    height: 65vh;
+}
+footer .lastchat{
+    width: 100%;
+}
+
+footer .icon {
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+    font-size: 3rem;
+    margin-top: 3vh;
+}
+
+footer .lastchat h3 {
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    font-size: 2rem;
+}
+
+footer  .lastchat ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+}
+footer .lastchat ul li{
+    display: flex;
+    flex-basis: 30%;
+    font-size: 0.7rem;
+    line-height: 5vh;
+    letter-spacing: 1px;
+}
+footer p{
+    width: 100%;
+    margin-top: 10vh;
+    font-size: 1rem;
+}
+@media screen and (max-width:991px){
+    header .headerchart .logo h1{
+        font-size: 1.8rem;
+    }
+    .review .reviewchart .bigreview h2{
+        font-size: 1.8rem;
+    }
+    .event .eventimg .Crimecity_event h5{
+        font-size: 0.9rem;
+        font-weight: 900;
+    }
+    .event .eventimg .Crimecity_event p{
+        font-size: 0.7rem;
+    }
+    .event .eventimg .Theflash_event h5{
+        font-size: 0.9rem;
+        font-weight: 900;
+    }
+    .event .eventimg .Theflash_event p{
+        font-size: 0.7rem;
+    }
+
+    .event .eventimg .end_event h5{
+        font-size: 0.9rem;
+        font-weight: 900;
+    }
+    .event .eventimg .end_event p{
+        font-size: 0.7rem;
+    }
+    footer .icon{
+        font-size: 2.5rem;
+    }
+
+    footer .lastchat h3{
+        font-size: 1.5rem;
+    }
+    footer .lastchat ul li{
+        font-size: 0.2rem;
+    }
+
+
+}
+@media screen and (max-width:767px) {
+    header .headerchart .logo h1{
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+    header .headerchart ul{
+        font-size: 0.8rem;
+    }
+    header .headerchart .headicon{
+        font-size: 0.8rem;
+    }
+    .menuchart #menubar ul li{
+        font-size: 0.6rem;
+    }
+    .review .reviewchart .bigreview h2{
+        font-size: 1.3rem;
+    }
+    .videochart h2{
+        font-size: 2rem;
+    }
+    .review .reviewchart .reviewmore h5{
+        font-size: 0.8rem;
+        font-weight: 900;
+    }
+    .review .reviewchart .reviewmore p{
+        font-size: 0.5rem;
+    }
+    .review .reviewchart .spiderman .spiderman_review .reviewimg2 img{
+        margin-top: 1vh;
+    }
+    .review .reviewchart .crimecity .crimecity_review .reviewimg3 img{
+        margin-top: 1vh;
+    }
+    .event .eventtext h3{
+        font-size: 2.5rem;
+    }
+    footer .lastchat ul {
+        font-size: 0.2rem;
+        gap: 5%;
+    }
+}
+
+
+@media screen and (max-width:575px) {
+    .backimg{
+        background-image: url(../imgs/bg2.png);
+        height: 65vh;
+    }
+    header .headerchart{
+      display: flex;
+      justify-content: space-evenly;
+      flex-basis: 100%;
+      text-align: center;
+    }
+    header .headerchart .logo{   
+    flex-basis: 50%;
+    }
+    header .headerchart .logo h1{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    header .headerchart ul{
+        display: none;
+        justify-content: none;
+    }
+    header .headerchart ul li{
+        display: none;
+    }
+    header .headerchart .headicon{
+        opacity: 0;
+    }
+    header .headerchart .headicon2 i{
+        display: inherit;
+        color: #fff;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    .movieword h2{
+        font-size: 3rem;
+    }
+
+    .menuchart #menubar{
+        width: 100%;
+        margin-left: 0;
+    }
+    .videochart h2{
+        margin-bottom: 10vh;
+        font-size: 2.5rem;
+    }
+    .menuchart #menubar ul li a{
+        font-size: 0.8rem;
+    }
+    .videochart video{
+        height: 30vh;
+        margin-bottom: 0;
+    }
+    .review .reviewchart .bigreview h2{
+        font-size: 1.4rem;
+        margin-top: 10vh;
+    }
+    .review .reviewchart .reviewmore{
+        border-bottom: none;
+    }
+    .review .reviewchart .reviewmore h5{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .review .reviewchart .reviewmore p{
+        font-size: 0.8rem;
+    }
+    .review .reviewchart .flash{
+        display: block;
+        height: 50vh;
+        border-bottom: none;
+    }
+ 
+
+    .review .reviewchart .flash .flash_img{
+        max-width: 80%;
+        height: 35vh;
+    }
+    .review .reviewchart .flash .flash_img img{ 
+        padding-left:28%;
+    }
+
+    .review .reviewchart .flash .flash_review h5{
+        font-size: 1.4rem;
+        margin-top: 15%;
+    }
+
+    .review .reviewchart .flash .flash_review .reviewimg{
+        margin-left: 1%;
+        line-height: 3vh;
+        margin-top: 0;        
+    }
+    .review .reviewchart .flash .flash_review p{
+        width: 97vw;
+    }
+    .review .reviewchart .spiderman{
+        margin-top: 70%;
+        display: block;
+        border-bottom: none;
+        height: 80%;
+    }
+    .review .reviewchart .spiderman .spiderman_img{
+        max-width: 80%;
+        padding-left: 25%;
+    }
+    .review .reviewchart .spiderman h5{
+        width: 200%;
+        font-size: 1.4rem;
+        margin-top: 3vh;
+    }
+    .review .reviewchart .spiderman .spiderman_review img{
+        max-width: 50%;
+        
+    }
+    .review .reviewchart .spiderman .spiderman_review .reviewimg2{
+        margin-left: 1%;
+        line-height: 3vh;
+        margin-top: 1vh;
+    }
+    .review .reviewchart .spiderman .spiderman_review .reviewimg2 .reviewname2{
+        margin-top: 2%;
+    }
+    .review .reviewchart .spiderman .spiderman_review p{
+        width: 140%;
+    }
+    
+    .review .reviewchart .crimecity{
+        display: none;
+    }
+    .event{
+        height: 55vh;
+    }
+
+    footer{
+        height: 60vh;
+    }
+    footer .icon{
+        font-size: 3rem;
+        position: relative;
+        top: 60vh;
+        margin-top: 0;
+        right: 28%;
+        gap: 10%;
+    }
+ 
+    footer .lastchat h3{
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-bottom: 7vh;
+    }
+    footer .lastchat ul{
+        width: 100%;
+        display: flex;
+    }
+
+    footer .lastchat ul li{
+        line-height: 10vh;
+        gap: 1vw;
+        
+    }
+    footer .lastchat p{
+        margin-top: 16.5vh;
+        margin-left: 10%;
+    }
+    footer .lastchat ul:nth-child(5){
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:489px) {
+    header .headerchart .logo h1{
+        font-size: 2.4rem;
+        font-weight: 900;
+    }
+    .review .reviewchart .bigreview h2 {
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    .review .reviewchart .spiderman{
+        margin-top: 70%;
+        display: block;
+        border-bottom: none;
+        height: 80%;
+    }
+    .review .reviewchart .spiderman h5{
+        width: 170%;
+        font-size: 1.2rem;
+    }
+    footer .lastchat p{
+        margin-top: 16.5vh;
+        margin-left: 10%;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:391px) {
+    header .headerchart .logo h1{
+        font-size: 2rem;
+        font-weight: 900;
+        margin-top: 5%;
+    }
+    .menuchart #menubar ul li {
+        font-size: 0.8rem;
+    }
+    .review .reviewchart .bigreview h2{
+        font-size: 0.8rem;
+    }
+    .videochart h2{
+        font-size: 2rem;
+    }
+    .review .reviewchart .reviewmore h5{
+        font-size: 0.7rem;
+        font-weight: 900;
+    }
+    .review .reviewchart .reviewmore p{
+        font-size: 0.2rem;
+    }
+    
+    .review .reviewchart .flash .flash_review h5{
+        font-size: 1.4rem;
+        margin-top: 5%;
+    }
+
+    .review .reviewchart .spiderman .spiderman_review .reviewimg2 img{
+        margin-top: 1vh;
+    }
+
+    footer .lastchat ul {
+        font-size: 0.2rem;
+        gap: 5%;
+    }
+    .review .reviewchart .flash .flash_img{ 
+        padding-left: 2%;
+        height: 70%;
+    }
+    .review .reviewchart .spiderman{
+        padding-left: 0;
+    }
+    .review .reviewchart .spiderman .spiderman_img{
+        margin-left: 2%;
+        margin-top: 30%;
+    }
+    .event{
+        height: 50%;
+    }
+    .event .eventtext h3{
+        font-size: 2.5rem;
+    }
+    footer .icon{
+        font-size: 3rem;
+        position: relative;
+        top: 55vh;
+        margin-top: 0;
+        right: 22%;
+        gap: 10%;
+    }
+ 
+    footer .lastchat p{
+        margin-top: 15vh;
+        margin-left: 2%;
+        font-size: 0.8rem;
+    }
+   
+    
+}
